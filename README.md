@@ -71,3 +71,7 @@ This element can be used to model transmissive mass-transport through thin layer
 ### Finite-space, open, or reflective Warburg `FLW(Aw_Ohm_p_s_sqrt: = 0.001, B_1_p_s_sqrt: = 20)`
 This element can be used to model reflective diffusion as it appears in porous electrodes
 (see https://lithiuminventory.com/experimental-electrochemistry/eis/diffusion-impedance/index.html).
+
+### Gerischer element (classic version) `G(R_Ohm: = 0.01, tau_s: = 1)`
+The Gerischer impedance can be used to analyze porous electrodes with a asymmetric, distributed impedance behavior.
+(see https://doi.org/10.1016/S0167-2738(02)00185-6 for more information)

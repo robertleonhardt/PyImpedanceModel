@@ -6,6 +6,7 @@ from .ImpedanceModelElement import ImpedanceModelElement
 class G(ImpedanceModelElement):
     """
     (Classical) Gerischer impedance
+    https://doi.org/10.1016/S0167-2738(02)00185-6
     
     @version:   AA-20250213
     @author:    Robert Leonhardt <mail@robertleonhardt.de>
