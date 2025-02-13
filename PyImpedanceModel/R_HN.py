@@ -21,8 +21,8 @@ class R_HN(ImpedanceModelElement):
         """
         Equivalent circuit element: Resistore-CPE-parallel element
         
-        Model function for a parallel connection of a resistor and a CPE
-        Appearance: Depressed semi-circle
+        Model function for a parallel connection of a resistor and a CPE with an asymmetric shape
+        Appearance: Depressed, asymmetric semi-circle 
         Model:      Z = R / (1 + tau * (jw)^alpha)^beta (Havriliak-Negami element)
 
         Args:
