@@ -9,3 +9,4 @@ from .L import L
 from .W import W
 from .FLW import FLW
 from .FSW import FSW
+from .G import G
