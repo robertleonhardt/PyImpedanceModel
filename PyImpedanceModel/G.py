@@ -33,7 +33,7 @@ class G(ImpedanceModelElement):
         
     
     def evaluate(self, frequency_Hz: npt.ArrayLike) -> npt.ArrayLike:
-        return R_Ohm / np.sqrt(1 + 1j * 2 * np.pi * frequency_Hz * tau_s)
+        return self.R_Ohm / np.sqrt(1 + 1j * 2 * np.pi * frequency_Hz * self.tau_s)
     
     
     @property 
