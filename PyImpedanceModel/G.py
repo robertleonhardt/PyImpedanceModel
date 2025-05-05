@@ -13,8 +13,8 @@ class G(ImpedanceModelElement):
     """
     
     # Default min/max values
-    _min_value_list: List[float] = [1e-4, 1e-6]
-    _max_value_list: List[float] = [1e4, 1e3]
+    _min_value_list: list[float] = [1e-4, 1e-6]
+    _max_value_list: list[float] = [1e4, 1e3]
     
     
     def __init__(self, R_Ohm: float = 0.01, tau_s: float = 1):
