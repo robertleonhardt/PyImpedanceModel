@@ -12,7 +12,7 @@ class ImpedanceModelElement:
     """
         
     # List with element parameters
-    _parameter_list: List[float]
+    _parameter_list: list[float]
     
     
     def set_parameters(self, *parameters: List[float]) -> None:

@@ -13,8 +13,8 @@ class C(ImpedanceModelElement):
     """
     
     # Default min/max values
-    _min_value_list: List[float] = [1e-6]
-    _max_value_list: List[float] = [1e6]
+    _min_value_list: list[float] = [1e-6]
+    _max_value_list: list[float] = [1e6]
     
     
     def __init__(self, C_F: float = 300):

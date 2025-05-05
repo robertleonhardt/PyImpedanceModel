@@ -13,8 +13,8 @@ class CPE(ImpedanceModelElement):
     """
     
     # Default min/max values
-    _min_value_list: List[float] = [1e-6, 0]
-    _max_value_list: List[float] = [1e6, 1]
+    _min_value_list: list[float] = [1e-6, 0]
+    _max_value_list: list[float] = [1e6, 1]
     
     
     def __init__(self, Q0_Ohm_p_s_n: float = 30, alpha: float = 0.95):

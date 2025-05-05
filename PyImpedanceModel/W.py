@@ -13,8 +13,8 @@ class W(ImpedanceModelElement):
     """
     
     # Default min/max values
-    _min_value_list: List[float] = [1e-9]
-    _max_value_list: List[float] = [1e9]
+    _min_value_list: list[float] = [1e-9]
+    _max_value_list: list[float] = [1e9]
     
     
     def __init__(self, Aw_Ohm_p_s_sqrt: float = 1e-6):

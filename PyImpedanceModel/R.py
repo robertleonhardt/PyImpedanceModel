@@ -13,8 +13,8 @@ class R(ImpedanceModelElement):
     """
     
     # Default min/max values
-    _min_value_list: List[float] = [1e-4]
-    _max_value_list: List[float] = [1e4]
+    _min_value_list: list[float] = [1e-4]
+    _max_value_list: list[float] = [1e4]
     
     
     def __init__(self, R_Ohm: float = 0.01):
