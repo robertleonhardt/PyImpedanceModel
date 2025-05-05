@@ -64,11 +64,11 @@ A brief ressource on ZARC elements can be found here:
 Warburg elements are used to model semi-infinite, linear diffusion behaviors in impedance spectra.
 Its basically a frequentcy-independent 45° CPE. Aw is the Warburg constant.
 
-### Finite-length, closed, or transmissive Warburg `FLW(Aw_Ohm_p_s_sqrt: = 1e-7, B_1_p_s_sqrt: = 1e-7)`
+### Finite-length, closed, or transmissive Warburg `FLW(Z_0_Ohm: = 1e2, tau_s: = 1)`
 This element can be used to model transmissive mass-transport through thin layers with a finite length
 (see https://lithiuminventory.com/experimental-electrochemistry/eis/diffusion-impedance/index.html).
 
-### Finite-space, open, or reflective Warburg `FLW(Aw_Ohm_p_s_sqrt: = 0.001, B_1_p_s_sqrt: = 20)`
+### Finite-space, open, or reflective Warburg `FLW(Z_0_Ohm: = 1e2, tau_s: = 1)`
 This element can be used to model reflective diffusion as it appears in porous electrodes
 (see https://lithiuminventory.com/experimental-electrochemistry/eis/diffusion-impedance/index.html).
 
