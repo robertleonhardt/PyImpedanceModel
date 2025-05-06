@@ -226,6 +226,12 @@ class ImpedanceModel:
         if not p_max:
             p_max = [boundary for boundary_list in self._flat_model_list for boundary in boundary_list._max_value_list]
         
+        # Sanity check for x0
+        # NOTE: This avoids x0 to be 1 while p_min = 10 and p_max = 100 etc.
+        for i in np.arange(len(p_0)):
+            if not (p_min[i] <= p_0[i] <= p_max[i]):
+                p_0[i] = (p_max[i] - p_min[i]) / 2
+        
         t_before = perf_counter()
         
         # Fit model
