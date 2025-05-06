@@ -230,7 +230,7 @@ class ImpedanceModel:
         # NOTE: This avoids x0 to be 1 while p_min = 10 and p_max = 100 etc.
         for i in np.arange(len(p_0)):
             if not (p_min[i] <= p_0[i] <= p_max[i]):
-                p_0[i] = (p_max[i] - p_min[i]) / 2
+                p_0[i] = (p_max[i] + p_min[i]) / 2
         
         t_before = perf_counter()
         
