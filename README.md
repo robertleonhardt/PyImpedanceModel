@@ -9,9 +9,13 @@ and to fit models to real-world impedance data.
 Simple example scripts for a) seeting up arbitrary models, and b) fit a model to real-world data can be found in the repo.
 
 ## Usage
-In its most basic form, a model can be initialized as follows:
+After instally PyImpedanceModel using
+```
+python -m pip install PyImpedanceModel
+```
+you can import it and us it as 
 ```python
-from PyImpedanceModel import *
+from pyimpedancemodel import ImpedanceModel, R, C
 
 model = ImpedanceModel([R(), (R(), C())])
 ```
